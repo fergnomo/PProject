@@ -1,4 +1,5 @@
 import clases as cd
+import listas as li
 
 #Print Hola Mundo
 print("Hola Mundo")
@@ -40,12 +41,19 @@ def mensaje1():
 def sumar():
     num1 = 6
     num2 = 7
-    return(num1 + num2)
+    resultado = num1 + num2
+    return(resultado)
 
 def restar(a, b):
-    return (a - b)
+    resultado = a - b
+    return (resultado)
 
-print(sumar())
-print(restar(17,2))
-print(cd.multiplicar(3,2))
+resultado_suma = sumar()
+resultado_resta = restar(20,5)
+resultado_multiplicar = cd.multiplicar(7,3)
+
+print(resultado_suma)
+print(resultado_resta)
+print(resultado_multiplicar)
+print(li.primeraLista)
 mensaje1()
