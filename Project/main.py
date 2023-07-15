@@ -1,6 +1,8 @@
 import clases as cd
-import listas as li
+import listas as ls
 import tuplas as tp
+import diccionario as dc
+import condicionales as cn
 
 #Print Hola Mundo
 print("Hola Mundo")
@@ -56,6 +58,8 @@ resultado_multiplicar = cd.multiplicar(7,3)
 print(resultado_suma)
 print(resultado_resta)
 print(resultado_multiplicar)
-print(li.primeraLista)
+print(ls.primeraLista)
 print(tp.nombre)
+nombreMJ23 = dc.quintoDiccionario["Nombre"]
+print(nombreMJ23)
 mensaje1()
