@@ -1,4 +1,4 @@
-#Ejercicio 4 ---- FALLIDO
+#Ejercicio 4 ---- Resolucion temporal
 lista=[]
 num = int(input("De cuantos numeros vas a hacer la media: "))
 while len(lista) < num:
