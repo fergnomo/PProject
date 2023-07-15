@@ -1,5 +1,6 @@
 import clases as cd
 import listas as li
+import tuplas as tp
 
 #Print Hola Mundo
 print("Hola Mundo")
@@ -56,4 +57,5 @@ print(resultado_suma)
 print(resultado_resta)
 print(resultado_multiplicar)
 print(li.primeraLista)
+print(tp.nombre)
 mensaje1()
