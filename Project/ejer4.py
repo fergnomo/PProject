@@ -1,8 +1,9 @@
 #Ejercicio 4 ---- Resolucion temporal
 lista=[]
-num = int(input("De cuantos numeros vas a hacer la media: "))
-while len(lista) < num:
-#   for i in range(len(lista)):
+while True:
     lista.append(int(input("Escribe un numero: ")))
-media = int(sum(lista[0:])/len(lista))
+    confirmacion = input("¿Quieres continuar? Escribe s o n: ")
+    if confirmacion == "n":
+        break
+media = sum(lista[0:])/len(lista)
 print("La media es: " + str(media))
