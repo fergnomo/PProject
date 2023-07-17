@@ -11,12 +11,15 @@
 #Ejercicio 4 ---- Solucion
 
 lista=[]
+
 while True:
     num = input("Escribe un numero (c para terminar): ")
+    
     if num == "c":
         break
     else:
         lista.append(int(num))
+        
 if len(lista) != 0:
     media = round(sum(lista[0:])/len(lista), 3)
     print("La media es: " + str(media))
