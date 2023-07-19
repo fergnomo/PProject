@@ -64,4 +64,35 @@ if salario_administrativo < salario_jefe_area < salario_director < salario_direc
     print("Bien")
 else:
     print("Mal")
+#---------------------------------------------- Parte 4
+#uso de los operadores logicos AND y OR
 
+print("Becas 2023")
+distancia = int(input("Distancia de tu casa a la escuela: "))
+hermanos = int(input("Número de hermanos en el centro: "))
+salario_familiar = int(input("Salario anual bruto: "))
+
+if distancia > 40 and hermanos > 2 and salario_familiar <= 20000:
+    print("Tiene beca")
+else:
+    print("Que te la paguen tus padres crack")
+
+if (distancia > 40 and hermanos > 2) or salario_familiar <= 20000:
+    print("Tiene beca")
+else:
+    print("Que te la paguen tus padres crack")
+    
+#uso del operador IN
+asignaturas=["matematicas", "ingles", "lengua", "fisica", "quimica"]
+print(asignaturas[:])
+
+eleccion = input("Elige la asignatura a cursar")
+#lo inputado en la variable anterior lo transforma en minusculas
+eleccionLower = eleccion.lower()
+
+if eleccionLower in asignaturas[:]:
+    print("Asignatura elegida " + eleccion)
+else:
+    print("Asignatura elegida erronea")
+    
+#Python es case sensitive, por lo que si ponemos alguna palabra de la lista con una mayuscula que no esta configurada va a dar error
