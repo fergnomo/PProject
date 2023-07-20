@@ -67,4 +67,31 @@ for i in range(len(email)):
         
 if valido:
     print("Email correcto")
+    
+#----------------- parte 4 de los bucles
+        #ejemplos con while
+i=1
 
+while i<=10:
+    print("Ejecución" + str(i))
+    i+=1
+
+print("Terminó la ejecución")
+
+#ejemplo de inicio de sesión con re intentos limitados, si quitamos la condición de la i == 15, tendríamos intentos infinitos
+edad = int(input("Escribe tu edad: "))
+sesión = True
+i = 0
+
+while edad<5 or edad>100:
+    print("Has introducido una edad errónea. Vuelve a intentarlo")
+    edad = int(input("Escribe tu edad: "))
+    i += 1
+    if i == 5:
+        print("Se ha bloqueado la sesión")
+        sesión = False
+        break
+    
+if sesión == True:
+    print("Gracias por colaborar. Puedes pasar")
+    print(f"Edad del participante {edad}")
