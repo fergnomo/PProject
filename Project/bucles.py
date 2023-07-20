@@ -95,3 +95,37 @@ while edad<5 or edad>100:
 if sesión == True:
     print("Gracias por colaborar. Puedes pasar")
     print(f"Edad del participante {edad}")
+    
+#----------------- parte 5 de los bucles
+        #instrucciones continue, pass y else
+for letra in "Python":
+    
+    if letra == "h":
+        continue #se salta una iteración del bucle 
+    print("Viendo la letra: " + letra)
+
+#ejercicio con una aplicación mas practica
+nombre="Pildoras Informaticas"
+contador = 0
+print(len(nombre))
+
+for letra in nombre:
+    if letra == " ":
+        continue
+    contador+=1
+    
+print(contador)
+
+#instrucción pass: sirve para que el programa cargue sin hacer nada y no rompa el programa
+
+#instrucción else
+email=input("Email: ")
+
+for i in email:
+    if i=="@":
+        arroba = True
+        break   
+else:
+    arroba = False
+    
+print(arroba)
