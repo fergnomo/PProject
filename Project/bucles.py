@@ -40,11 +40,31 @@ if contador==2:
     print ("Email Valido!")
 else:
     print ("Email Invalido! Debe tener al menos un caracter especial (@ o.) y")
-    
-    #nuevo bucle in range
+ 
+
+#----------------- parte 3 de los bucles   
+    #nuevo bucle in range y notaciones especiales con el print
     
 for i in range(5):
     print("Hola")
 
-           
-      
+for i in range(5):    #imprime del 0 al 4
+    print(i)
+    
+for i in range (5):
+    print(f"Valor de la variable {i}")   #la f se utiliza para que el print entienda que lo que hay entre llaves es una notación especial que una texto con los valores que toma la variable
+
+for i in range(5, 50, 3):
+    print(f"Valor de la variable {i}")   #la i va del 5 al 49 y va de 3 en 3
+
+
+valido=False
+email = input("Introduce tu email: ")
+
+for i in range(len(email)):
+    if email[i] == "@":  #con esta sentencia se valida si la variable i durante el for coge el valor que se esta buscando
+        valido = True
+        
+if valido:
+    print("Email correcto")
+
