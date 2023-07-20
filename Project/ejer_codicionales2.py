@@ -10,7 +10,6 @@ else:
     print("Esto va a petar corre")
 
 #ejer 2
-
 a = int(input("Escribe el dividendo: "))
 b = int(input("Escribe el divisor: "))
 
@@ -54,10 +53,10 @@ else:
     pass
 
 #ejer 10
-alim_veg = ["pimiento", "tofu", "falafel"]
+alim_veg = ["pimiento", "tofu", "falafel", "soja texturizada"]
 alim_no_veg = ["peperoni", "jamon", "salmon"]
 
-conf = input("¿Te gustaria una pizza vegetariana? ")
+conf = input("¿Te gustaría una pizza vegetariana? ")
 if conf.lower() == "si":
     ing = input(f"Elige tu ingrediente {alim_veg}: ").lower()
     if ing in alim_veg:
@@ -70,3 +69,5 @@ else:
         print(f"Tu pizza no es vegetariana lleva tomate, mozzarella y {ing}")
     else:
         print("No disponemos de ese ingrediente")
+
+        
