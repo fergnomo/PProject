@@ -2,15 +2,20 @@
     "python.analysis.typeCheckingMode": "basic",
     "editor.fontSize": 14,
     "editor.minimap.autohide": true,
+    "python.analysis.diagnosticSeverityOverrides": { 
+        "reportUnboundVariable" : "information", },
     "cSpell.words": [
         "alim",
         "beca",
         "contrasena",
         "distancia",
         "ejer",
+        "encapsulación",
         "hermanos",
         "jamon",
+        "Modularización",
         "paguen",
+        "pasandole",
         "Tiene"
     ]
 }
