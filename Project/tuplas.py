@@ -39,3 +39,5 @@ print(dia)
 print(mes)
 
 #Recordar que no se pueden utilizar acciones que modifiquen las tuplas
+
+print(anho)
